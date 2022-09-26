@@ -1,0 +1,69 @@
+.button {    
+    width: 298px;
+    height: 54px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF; 
+    cursor: pointer;    
+    &__animals {
+        &_left {
+            width: 62px;
+            height: 62px;
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            left: -62px;
+            transform: translateY(-50%);
+            &::before {
+                content: url('../../assets/icons/backstage/backstage__icon_left.png');
+                position: absolute;
+                left: 50%;
+                top: 20px;
+                transform: translateX(-50%);
+            }
+        }
+        &_right {
+            width: 62px;
+            height: 62px;
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            right: -62px;
+            transform: translateY(-50%);
+            &::after {
+                content: url('../../assets/icons/backstage/backstage__icon_right.png');
+                position: absolute;
+                width: inherit;
+                height: inherit;
+                left: 50%;
+                top: 20px;
+                transform: translateX(-50%);
+            }            
+        }
+    }
+    &__testimonials {
+        border-radius: 5px;
+        margin-top: 31px;
+    }    
+    &__footer {
+        border-radius: 5px;
+        margin-top: 22px;
+        a {
+            color: #FFFFFF;
+            text-decoration: none;            
+        }
+    }
+    &:hover {
+        background: #E47209;
+    }
+    &:active {
+        background: #4B9200;
+    }
+    &:disabled {
+        background: #767474;
+    }
+}

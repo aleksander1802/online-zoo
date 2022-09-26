@@ -1,0 +1,46 @@
+.promo {    
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url('../../assets/images/promo/promo_panda.jpg') center /cover  no-repeat;   
+    &__wrapper {
+        padding-top: 165px;
+        padding-right: 15px;        
+        display: flex;
+        justify-content: flex-end;
+        &_items {
+            position: relative;
+            width: 500px;
+            display: flex;
+            flex-direction: column;            
+            text-align: center;
+            padding-bottom: 100px;
+            z-index: 1;
+            h2 {
+                font-weight: 700;
+                font-size: 106px;
+                line-height: 80px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                span {
+                    color: #FFEE2E;
+                }
+            }
+            &-button {
+                margin: 0 auto;    
+                margin-top: 60px;
+            }
+            &::before {
+                content: url('../../assets/images/promo/promo_ellipse.png');
+                position: absolute;
+                z-index: -1;
+                bottom: 217px;
+                right: 108px;
+            }
+        }
+    }
+}
+
+
+   

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    visibility: hidden;
+    font-size: 0;
+}
+
+.container {    
+    width: 1190px; 
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/button';
+@import 'blocks/backstage';
+@import 'blocks/feed';
+@import 'blocks/testimonials';
+@import 'blocks/footer';
+@import 'blocks/donate';
+@import 'blocks/donation';
+
+.active {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;    
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;    
+}

@@ -1,0 +1,127 @@
+.testimonials {
+    padding: 140px 220px 183px; 
+    position: relative;   
+    &__grid {
+        height: 514px;
+        display: grid;
+        grid-template-rows: 47px 391px 8px;
+        align-content: space-between;
+        justify-items: center;
+        margin-left: -30px;
+    }
+    &__title {
+        font-weight: 400;
+        font-size: 36px;
+        padding-top: 4px;      
+    }
+    &__wrapper {
+        padding-top: 15px;
+        width: 1160px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;         
+        &_item {
+            position: relative;
+            width: 231px;
+            height: 350px;            
+            padding-top: 11px;
+            padding-bottom: 24px;
+            padding-left: 13px;
+            padding-right: 17px;        
+            background-color: #F1F3F2;
+            border-radius: 20px;
+            &::before {
+                content: "";
+                position: absolute;
+                top: -1px;
+                bottom: -1px;
+                left: -1px;
+                right: -1px;
+                background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%),
+                linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%),
+                linear-gradient(0deg, #F5F7F6, #F5F7F6);
+                border-radius: 20px;
+                z-index: -1;
+            }
+            &-header {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-items: center;
+                &-img {
+                    display: flex;
+                    align-self: center;
+                    width: 37px;
+                    height: 37px;
+                    border-radius: 100%;
+                    overflow: hidden;
+                    object-fit: cover;
+                }
+                &-descr {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 10px;                    
+                    &-title {
+                        font-weight: 400;
+                        font-size: 16px;
+                    }
+                    &-dest {
+                        font-weight: 300;
+                        font-size: 15px;
+                        color: #BDBDBD;
+                    }                   
+                }             
+            }
+            &-descr {
+                margin-top: 12px;
+                width: 237px; 
+                height: 309px;              
+                font-weight: 300;
+                font-size: 15px; 
+                line-height: 18px;               
+                color: #767474;
+                overflow: hidden;               
+            }
+        }
+    }
+    &__scroll {   
+        position: relative;
+        display: block;             
+        min-width: 598px;
+        height: 7px;
+        border-radius: 5px;
+        background: #F5F7F6;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -1px;
+            bottom: -1px;
+            left: -1px;
+            right: -1px;
+            background: linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%),
+            linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%),
+            linear-gradient(0deg, #F5F7F6, #F5F7F6);
+            border-radius: 5px;
+            z-index: -1;
+        }
+        &::-webkit-slider-thumb {
+            background: #ecf0f1;
+            border: 1px solid transparent;
+            background-color: #FE9013;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 115px;
+            height: 7px;
+            -webkit-appearance: none;
+          }
+        }  
+    &__image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
