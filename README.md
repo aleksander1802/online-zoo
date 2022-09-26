@@ -1,3 +1,1 @@
-https://github.com/aleksander1802/online-zoo/pages/main/index.html
-https://github.com/aleksander1802/online-zoo/pages/main
-https://github.com/aleksander1802/online-zoo/pages/main/
+https://aleksander1802.github.io/online-zoo/pages/main/
