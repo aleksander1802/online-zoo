@@ -922,6 +922,7 @@ h1 {
   border-radius: 5px;
   color: red;
   border: 1px solid red;
+  cursor: pointer;
 }
 
 .donate {
