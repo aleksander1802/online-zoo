@@ -1,0 +1,128 @@
+@media (max-width: 1599px) {  
+    .container {
+        width: 940px;
+    } 
+
+    .header {
+        z-index: 10;
+        &__wrapper {
+            margin-right: 0;
+            &_list {
+                width: 576px;
+            }
+            &_logo {
+                margin-left: 0;
+            }            
+        }
+    }
+
+    .promo {
+        &__wrapper {
+            padding-top: 123px;
+            padding-bottom: 47px;
+            padding-right: 0;
+            &_items {
+                width: 400px;
+                height: 415px;
+                margin-right: 57px;
+                padding-bottom: 0;
+                h2 {
+                    font-size: 85px;
+                    line-height: 63px;
+                }
+                &::before {
+                    content: url('../../assets/images/promo/promo_elipse1000.png');
+                    bottom: 97px;
+                    right: 90px;
+                }
+                &-button {
+                    margin-top: 47px;
+                }
+            }
+        }
+    }
+
+    .backstage {
+        padding-top: 100px;
+        padding-bottom: 140px;
+        margin: 0 auto;
+        &__wrapper {
+            height: 427px;
+            padding-bottom: 142px;
+            grid-template-columns: 455px 1fr;
+            column-gap: 31px;
+            padding-left: 0;
+            &_description {
+                grid-template-columns: auto;
+                grid-template-rows: 99px 58px 29px 133px;
+            }
+            &_image {
+                content: url('../../assets/images/backstage/backstage_oldman1000.png');
+                align-self: center;
+            }
+        }
+        &__animals {
+            width: 960px;
+            overflow: hidden;
+            grid-template-columns: repeat(4, 294px);
+            grid-template-rows: repeat(2, 294px);
+            row-gap: 92px;
+            padding-left: 0;
+            &_item {
+                grid-template-columns: 294px;
+                grid-template-rows: 294px;
+                &-image {
+                    min-width: 295px;
+                    max-width: 295px;
+                    min-height: 295px;
+                    max-height: 295px;
+                }
+                &:nth-child(4) {
+                    grid-column-start: 2;
+                    grid-row-start: 2;                    
+                }
+                &:nth-child(3) {
+                    grid-column-start: 1;
+                    grid-row-start: 2;
+                }
+                &:nth-child(6) {
+                    grid-column-start: 3;
+                    grid-row-start: 1;
+                }
+            }
+            
+        }
+
+        
+
+
+
+
+
+        &__flower {
+            display: none;
+        }
+        &__palm {
+            content: url('../../assets/images/backstage/palm_foto1000.png');
+        }
+        &__strelitzia {
+            content: url('../../assets/images/backstage/strelitzia1000.png');
+        }
+        
+        &__button {
+            margin-top: 80px; 
+        }
+    }
+
+    .button__animals_right {
+        right: 34%;
+    }
+    .button__animals_left {
+        left: 35%;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+
+}

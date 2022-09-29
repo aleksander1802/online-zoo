@@ -198,6 +198,7 @@ h1 {
   position: absolute;
   top: 70%;
   left: -70px;
+  z-index: 10;
 }
 .button__animals_left::before {
   content: url("../../assets/icons/backstage/backstage__icon_left.png");
@@ -214,6 +215,7 @@ h1 {
   position: absolute;
   top: 70%;
   right: -70px;
+  z-index: 10;
 }
 .button__animals_right::after {
   content: url("../../assets/icons/backstage/backstage__icon_right.png");
@@ -338,6 +340,8 @@ h1 {
 .backstage__animals_item-image {
   max-width: 366px;
   max-height: 366px;
+  min-height: 366px;
+  min-width: 366px;
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
@@ -941,6 +945,7 @@ h1 {
   border-radius: 5px;
   color: red;
   border: 1px solid red;
+  cursor: pointer;
 }
 
 .donate {
@@ -1285,6 +1290,117 @@ h1 {
   margin-top: 29px;
 }
 
+@media (max-width: 1599px) {
+  .container {
+    width: 940px;
+  }
+  .header {
+    z-index: 10;
+  }
+  .header__wrapper {
+    margin-right: 0;
+  }
+  .header__wrapper_list {
+    width: 576px;
+  }
+  .header__wrapper_logo {
+    margin-left: 0;
+  }
+  .promo__wrapper {
+    padding-top: 123px;
+    padding-bottom: 47px;
+    padding-right: 0;
+  }
+  .promo__wrapper_items {
+    width: 400px;
+    height: 415px;
+    margin-right: 57px;
+    padding-bottom: 0;
+  }
+  .promo__wrapper_items h2 {
+    font-size: 85px;
+    line-height: 63px;
+  }
+  .promo__wrapper_items::before {
+    content: url("../../assets/images/promo/promo_elipse1000.png");
+    bottom: 97px;
+    right: 90px;
+  }
+  .promo__wrapper_items-button {
+    margin-top: 47px;
+  }
+  .backstage {
+    padding-top: 100px;
+    padding-bottom: 140px;
+    margin: 0 auto;
+  }
+  .backstage__wrapper {
+    height: 427px;
+    padding-bottom: 142px;
+    grid-template-columns: 455px 1fr;
+    -webkit-column-gap: 31px;
+       -moz-column-gap: 31px;
+            column-gap: 31px;
+    padding-left: 0;
+  }
+  .backstage__wrapper_description {
+    grid-template-columns: auto;
+    grid-template-rows: 99px 58px 29px 133px;
+  }
+  .backstage__wrapper_image {
+    content: url("../../assets/images/backstage/backstage_oldman1000.png");
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .backstage__animals {
+    width: 960px;
+    overflow: hidden;
+    grid-template-columns: repeat(4, 294px);
+    grid-template-rows: repeat(2, 294px);
+    row-gap: 92px;
+    padding-left: 0;
+  }
+  .backstage__animals_item {
+    grid-template-columns: 294px;
+    grid-template-rows: 294px;
+  }
+  .backstage__animals_item-image {
+    min-width: 295px;
+    max-width: 295px;
+    min-height: 295px;
+    max-height: 295px;
+  }
+  .backstage__animals_item:nth-child(4) {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+  .backstage__animals_item:nth-child(3) {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+  .backstage__animals_item:nth-child(6) {
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+  .backstage__flower {
+    display: none;
+  }
+  .backstage__palm {
+    content: url("../../assets/images/backstage/palm_foto1000.png");
+  }
+  .backstage__strelitzia {
+    content: url("../../assets/images/backstage/strelitzia1000.png");
+  }
+  .backstage__button {
+    margin-top: 80px;
+  }
+  .button__animals_right {
+    right: 34%;
+  }
+  .button__animals_left {
+    left: 35%;
+  }
+}
 .active {
   font-family: "Roboto";
   font-style: normal;

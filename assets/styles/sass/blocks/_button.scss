@@ -15,9 +15,9 @@
             height: 62px;
             border-radius: 100%;
             position: absolute;
-            top: 50%;
-            left: -62px;
-            transform: translateY(-50%);
+            top: 70%;
+            left: -70px;
+            z-index: 10;
             &::before {
                 content: url('../../assets/icons/backstage/backstage__icon_left.png');
                 position: absolute;
@@ -31,9 +31,9 @@
             height: 62px;
             border-radius: 100%;
             position: absolute;
-            top: 50%;
-            right: -62px;
-            transform: translateY(-50%);
+            top: 70%;
+            right: -70px;
+            z-index: 10;
             &::after {
                 content: url('../../assets/icons/backstage/backstage__icon_right.png');
                 position: absolute;
@@ -51,7 +51,7 @@
     }    
     &__footer {
         border-radius: 5px;
-        margin-top: 22px;
+        margin-top: 10px;
         a {
             color: #FFFFFF;
             text-decoration: none;            

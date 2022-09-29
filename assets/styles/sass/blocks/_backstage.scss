@@ -1,6 +1,9 @@
 .backstage {
     padding: 140px 0 100px 0;
     position: relative;
+    &__container {
+        position: relative;
+    }
     &__wrapper {
         display: grid;
         grid-template-columns: 609px 1fr;
@@ -34,21 +37,23 @@
             }
         }
     }
-    &__animals {
+    &__animals {   
+        width: 1158px;     
         display: grid;
-        grid-template-columns: repeat(3, 365px);
-        grid-template-rows: repeat(2, 367px);
+        grid-template-columns: repeat(4, 365px);
+        grid-template-rows: 367px 367px;
         column-gap: 30px;
         row-gap: 20px;
-        margin-left: -5px;    
-        justify-content: center;
+        justify-content: start;    
         position: relative;
+        overflow: hidden;
         z-index: 10;
+        padding-left: 15px;
         &_item { 
             position: relative;
             display: grid;
             grid-template-columns: 366px; 
-            grid-template-rows: 366px auto; 
+            grid-template-rows: 366px;
             border: 1px solid #FA6F32;
             border-radius: 5px;
             overflow: hidden;
@@ -76,6 +81,8 @@
             &-image {
                 max-width: 366px; 
                 max-height: 366px;
+                min-height: 366px; 
+                min-width: 366px;
                 position: relative;
                 object-fit: cover; 
                 transition: all .5s linear;
@@ -139,12 +146,10 @@
         position: absolute;
         bottom: -6px;
         right: 0;
-    }
+    }    
     &__button {
+        display: block;
         margin: 0 auto;
-        margin-top: 96px;
-    }
-    &__button {
         margin-top: 80px;
         width: 100%;
         text-align: center;
