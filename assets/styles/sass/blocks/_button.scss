@@ -15,8 +15,8 @@
             height: 62px;
             border-radius: 100%;
             position: absolute;
-            top: 70%;
-            left: -70px;
+            bottom: 347px;
+            left: -68px;
             z-index: 10;
             &::before {
                 content: url('../../assets/icons/backstage/backstage__icon_left.png');
@@ -31,8 +31,8 @@
             height: 62px;
             border-radius: 100%;
             position: absolute;
-            top: 70%;
-            right: -70px;
+            bottom: 347px;
+            right: -65px;
             z-index: 10;
             &::after {
                 content: url('../../assets/icons/backstage/backstage__icon_right.png');

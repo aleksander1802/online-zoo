@@ -95,18 +95,16 @@
 
         
 
-
-
-
-
         &__flower {
             display: none;
         }
         &__palm {
             content: url('../../assets/images/backstage/palm_foto1000.png');
+            bottom: 0;
         }
         &__strelitzia {
             content: url('../../assets/images/backstage/strelitzia1000.png');
+            bottom: 0;
         }
         
         &__button {
@@ -120,7 +118,158 @@
     .button__animals_left {
         left: 35%;
     }
+
+    .feed {
+        padding-top: 30px;
+        padding-bottom: 50px;
+        &__wrapper {
+            width: 940px;
+            margin-left: 0;
+            &_title {
+                padding-top: 30px;
+            }
+            &_items {
+                padding-left: 50px;
+                padding-top: 21px;
+                &-descr {
+                    width: 800px;
+                    padding-top: 21px;
+                    line-height: 20px;
+                }
+                &-content {
+                    width: 800px;
+                }
+            }
+        }
+        &__items {
+            padding-top: 44px;
+            &_wrapper {
+                padding-top: 39px;
+            }
+        }
+        &__button {
+            margin-top: 72px;
+            padding-bottom: 50px;
+        }
+    }
+
+    .testimonials {
+        padding-top: 100px;
+        padding-bottom: 140px;
+        padding-left: 30px;
+        padding-right: 30px;
+        &__grid {
+            height: 495px;
+            width: 940px;
+            overflow: hidden;
+            grid-template-rows: 32px 391px 8px;
+            margin-left: 0;
+            justify-content: space-between;
+        }
+        &__wrapper {
+            width: 940px; 
+            display: grid;
+            grid-template-columns: repeat(4, 293px);
+            column-gap: 29px;
+            justify-content: start; 
+            &_item {                
+                width: auto;                
+                &:first-child {
+                    margin-left: 2px;
+                }
+                &-descr {
+                    width: 245px;
+                }
+
+            }
+        }
+        &__scroll {   
+            display: block;  
+            min-width: 390px;  
+            margin-right: 10px;          
+            &::-webkit-slider-thumb {
+                width: 75px;
+                height: 7px;                
+            }
+        }
+        &__image {
+            content: url('../../assets/icons/testimonials/leaf_1000.png');
+            bottom: -85px;
+        }
+    }
+
+    .button__testimonials {
+        margin-top: 52px;
+    }
     
+
+    .footer {
+        padding: 40px 18px 50px 43px;
+        &__wrapper {
+            height: 352px;
+            width: 940px;
+            grid-template-columns: 118px 80px 400px;
+            grid-template-rows: 85px 54px 129px;        
+            justify-content: space-between;
+            align-content: space-between;
+            &_items {
+                height: 352px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &-links {
+                    display: flex;
+                    flex-direction: column;
+                    height: 134px;
+                    justify-content: space-between;
+                    a {
+                        display: flex;
+                        flex-direction: row;
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #FFFFFF;
+                        text-decoration: none;
+                        align-items: center;
+                        height: 26px;
+                        position: relative;
+                        &:before {
+                            content: '';
+                            width: 26px;
+                            height: 26px;
+                            background: rgba(196, 196, 196, 0.5);
+                            position: absolute;
+                            border-radius: 100%;
+                        }
+                        &:hover {
+                            color: orange;
+                            &:before {
+                                background: rgba(255, 115, 55, 0.5);
+                                
+                            }
+                        }
+                        &:active {
+                            color: #4B9200;
+                            &:before {
+                                background: rgba(75, 146, 0, .5);
+                                
+                            }
+                        }                    
+                        div {
+                            align-self: center;
+                            display: flex;
+                            width: 26px;
+                            justify-content: center;
+                            margin-right: 10px;
+                            z-index: 10;
+                        }
+                    }
+                }
+            }
+            &_nav {
+                width: 332px;                
+            }            
+        }
+    }
 }
 
 @media (max-width: 1200px) {

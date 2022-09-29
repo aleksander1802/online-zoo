@@ -43,7 +43,7 @@
         grid-template-columns: repeat(4, 365px);
         grid-template-rows: 367px 367px;
         column-gap: 30px;
-        row-gap: 20px;
+        row-gap: 80px;
         justify-content: start;    
         position: relative;
         overflow: hidden;
@@ -150,7 +150,7 @@
     &__button {
         display: block;
         margin: 0 auto;
-        margin-top: 80px;
+        margin-top: 138px;
         width: 100%;
         text-align: center;
     }
