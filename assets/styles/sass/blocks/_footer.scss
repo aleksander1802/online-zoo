@@ -9,11 +9,11 @@
         height: 352px;
         width: 1160px;
         grid-template-columns: 367px 362px 367px;
-        grid-template-rows: 85px 54px 129px;        
+        grid-template-rows: 85px 54px 42px;        
         justify-content: space-between;
         align-content: space-between;
         &_items {
-            height: 352px;
+            height: 174px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -22,6 +22,8 @@
                 flex-direction: column;
                 height: 134px;
                 justify-content: space-between;
+                grid-column-start: 1;
+                grid-row-start: 3;
                 a {
                     display: flex;
                     flex-direction: row;
