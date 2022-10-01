@@ -1712,6 +1712,7 @@ h1 {
   .donation__form_wrapper_radio::after {
     width: 785px;
     top: 29px;
+    left: 20px;
   }
   .donation__form_wrapper_radio-btn:nth-child(2) {
     display: none;
