@@ -2564,12 +2564,12 @@ h1 {
     width: 297px;
   }
   .donate {
-    background: url("../../assets/images/donation/panda_tablet.png") center/cover no-repeat;
-    min-height: 335px;
+    background: url("../../assets/images/donation/panda_320.png") center/cover no-repeat;
+    min-height: 187px;
     margin-top: 34px;
   }
   .donation {
-    padding: 30px 20px 46px;
+    padding: 30px 10px 21px;
   }
   .donation__title {
     width: auto;
@@ -2577,43 +2577,66 @@ h1 {
     line-height: 29px;
   }
   .donation__descr {
-    width: 589px;
+    width: 300px;
     padding-top: 19px;
     font-size: 16px;
     line-height: 22px;
+    font-weight: 500;
   }
   .donation__subtitle {
-    padding-top: 33px;
-    padding-bottom: 32px;
+    padding-top: 31px;
+    padding-bottom: 30px;
+    font-size: 24px;
   }
   .donation__wrapper {
-    padding-top: 29px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 34px;
+    padding-top: 20px;
+    padding-bottom: 22px;
   }
   .donation__wrapper_title {
-    margin-right: 0;
-    margin-left: 0;
+    font-size: 24px;
+  }
+  .donation__wrapper_share {
+    padding-top: 31px;
   }
   .donation__wrapper_subtitle {
     text-align: center;
-    width: 600px;
-    padding-top: 21px;
+    width: 300px;
+    padding-top: 10px;
+    font-size: 16px;
+    line-height: 22px;
   }
   .donation__wrapper_items {
-    width: 517px;
-    padding-top: 50px;
+    width: 300px;
+    padding-top: 10px;
+  }
+  .donation__wrapper_items img {
+    content: url("../../assets/icons/donate/panda_icon_320.svg");
   }
   .donation__wrapper_items-wrapper {
-    margin-left: -14px;
+    margin-left: 0;
+    padding-top: 20px;
+    height: 51px;
+  }
+  .donation__wrapper_items-wrapper-title {
+    font-size: 40px;
+  }
+  .donation__wrapper_items-wrapper-title::before {
+    content: url("../../assets/icons/donate/x_320.svg");
+    top: 10px;
+    right: -15px;
+  }
+  .donation__wrapper_items-wrapper-descr {
+    font-size: 9px;
   }
   .donation__form {
-    padding-top: 42px;
+    padding-top: 5px;
+  }
+  .donation__form_wrapper-button {
+    margin-top: 26px;
   }
   .donation__form_wrapper_radio {
-    width: 570px;
-    margin-left: 17px;
+    width: 309px;
+    margin-left: 0;
   }
   .donation__form_wrapper_radio-btn input {
     left: 17px;
@@ -2624,8 +2647,28 @@ h1 {
   .donation__form_wrapper_radio-btn:nth-child(4) {
     display: none;
   }
+  .donation__form_wrapper_radio-btn input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    z-index: -99;
+  }
+  .donation__form_wrapper_radio-btn input[type=radio] + label:before {
+    top: -2px;
+    left: 18px;
+    width: 3px;
+    height: 3px;
+  }
+  .donation__form_wrapper_radio-btn input[type=radio] + label:after {
+    content: url("../../assets/icons/donate/roller_icon_320.svg");
+  }
+  .donation__form_wrapper_radio-btn input[type=radio]:checked + label:after {
+    top: -10px;
+    left: 10px;
+    height: 20px;
+  }
   .donation__form_wrapper_radio-btn label {
-    margin-left: -3px;
+    font-size: 13px;
+    margin-top: 15px;
   }
   .donation__form_wrapper_radio-btn:nth-child(8) label {
     margin-left: -10px;
@@ -2634,34 +2677,48 @@ h1 {
     margin-left: -10px;
   }
   .donation__form_wrapper_radio::before {
-    width: 600px;
-    left: -17px;
+    width: 300px;
+    left: 0;
+    height: 14px;
   }
   .donation__form_wrapper_radio::after {
-    width: 524px;
+    width: 262px;
+    height: 1px;
+    top: 23px;
   }
   .donation__form_wrapper-select {
-    margin-left: 218px;
-    padding-top: 30px;
+    margin-left: 67px;
+    padding-top: 26px;
   }
   .donation__form_wrapper-number {
     width: 180px;
     height: 43px;
-    margin-top: 59px;
-    margin-left: 210px;
+    margin-top: -3px;
+    margin-left: 61px;
   }
   .donation__form_wrapper-number-num {
     width: 165px;
     height: 42px;
     padding-left: 5px;
   }
-  .donation__form legend {
-    margin-left: -7px;
-    margin-bottom: -8px;
+  .donation__form_wrapper-number-num::-webkit-input-placeholder {
+    font-size: 16px;
   }
-  .donation__footer_nav {
-    padding-left: 1px;
-    width: 296px;
+  .donation__form_wrapper-number-num::-moz-placeholder {
+    font-size: 16px;
+  }
+  .donation__form_wrapper-number-num:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .donation__form_wrapper-number-num::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .donation__form_wrapper-number-num::placeholder {
+    font-size: 16px;
+  }
+  .donation__form legend {
+    margin-left: 0;
+    margin-bottom: -7px;
   }
 }
 .active {
