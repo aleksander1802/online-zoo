@@ -19,7 +19,6 @@ h1 {
 .promo {
   position: relative;
   width: 100%;
-  min-height: 100vh;
   background: url("../../assets/images/promo/promo_panda.jpg") center/cover no-repeat;
 }
 .promo__wrapper {
