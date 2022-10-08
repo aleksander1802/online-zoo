@@ -7,8 +7,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
         const screenWidth = window.screen.width;
 
-        const target = event.target;
-        
+        const target = event.target;        
 
         if (screenWidth > 1599) {
             if (target.value === '0') {
