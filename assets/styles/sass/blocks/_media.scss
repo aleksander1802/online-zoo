@@ -630,6 +630,7 @@
             padding-top: 0;
             overflow: hidden;
             height: 365px;
+            width: 600px;
             display: grid;
             column-gap: 29px;
             justify-content: start;
@@ -1090,6 +1091,7 @@
         &__wrapper {
             padding-top: 0;
             overflow: hidden;
+            width: 300px;
             height: 360px;
             grid-template-columns: 298px;            
             grid-template-rows: repeat(3, 109px);

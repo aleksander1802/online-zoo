@@ -5,6 +5,18 @@
   padding: 0;
 }
 
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 h1 {
   visibility: hidden;
   font-size: 0;
@@ -89,6 +101,7 @@ h1 {
   width: 18px;
   height: 10px;
   z-index: 50;
+  cursor: pointer;
 }
 .header__burger span {
   position: absolute;
@@ -2115,6 +2128,7 @@ h1 {
     padding-top: 0;
     overflow: hidden;
     height: 365px;
+    width: 600px;
     display: grid;
     -webkit-column-gap: 29px;
        -moz-column-gap: 29px;
@@ -2552,6 +2566,7 @@ h1 {
   .testimonials__wrapper {
     padding-top: 0;
     overflow: hidden;
+    width: 300px;
     height: 360px;
     grid-template-columns: 298px;
     grid-template-rows: repeat(3, 109px);
