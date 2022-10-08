@@ -611,6 +611,9 @@
 
     .testimonials {
         padding: 60px 0 80px; 
+        &__slider {
+            width: 600px;
+        }
         &__title {
             padding-right: 4px;
             padding-top: 2px;
@@ -1068,6 +1071,9 @@
 
     .testimonials {
         padding: 30px 0 60px; 
+        &__slider {
+            width: 300px;
+        }
         &__title {
             font-size: 24px;
             padding-right: 0;

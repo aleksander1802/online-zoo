@@ -2096,6 +2096,9 @@ h1 {
   .testimonials {
     padding: 60px 0 80px;
   }
+  .testimonials__slider {
+    width: 600px;
+  }
   .testimonials__title {
     padding-right: 4px;
     padding-top: 2px;
@@ -2529,6 +2532,9 @@ h1 {
   }
   .testimonials {
     padding: 30px 0 60px;
+  }
+  .testimonials__slider {
+    width: 300px;
   }
   .testimonials__title {
     font-size: 24px;
