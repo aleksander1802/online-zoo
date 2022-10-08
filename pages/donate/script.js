@@ -1,3 +1,5 @@
+window.addEventListener('DOMContentLoaded', function() {
+
 const donateLength = document.querySelector('.donation__form_wrapper-number-num');
 
 const donationButton = document.querySelector('.donation__form_wrapper-button');
@@ -10,22 +12,39 @@ donateLength.oninput = function(){
     this.value = this.value.slice(0, 4);
 }
 
-const burger = document.querySelector('.header__burger');
-const headerActive = document.querySelector('.header');
+
 const headerContainer = document.querySelector('.header__container');
+const burger = document.querySelector('.header__burger');
+const burgerShow = document.querySelector('.burger__menu')
+const closeBurger = document.querySelector('.burger__close');
 const headerWrapper = document.querySelector('.header__wrapper');
-const headerWrapperList = document.querySelector('.header__wrapper_list');
-const headerWrapperLogo = document.querySelector('.header__wrapper_logo');
-const headerWrapperFigma = document.querySelector('.header__wrapper_figma');
+const burgerWrapper = document.querySelector('.burger__wrapper');
+
+const openBurger = () => {
+    burger.classList.add('hide');
+    burgerShow.classList.remove('hide');
+    headerWrapper.classList.add('hide');
+    burgerWrapper.classList.add('fade');
+    headerContainer.classList.add('burger');
+}
+
+const closeBurgerMenu = () => {
+    burger.classList.remove('hide');
+    burgerShow.classList.add('hide');
+    headerWrapper.classList.remove('hide');
+    burgerWrapper.classList.remove('fade');
+    headerContainer.classList.remove('burger');
+}
+
+burger.addEventListener('click', openBurger);
+
+closeBurger.addEventListener('click', closeBurgerMenu)
+
+burgerWrapper.addEventListener('click', (e) => {
+    if (e.target === burgerWrapper) {
+        closeBurgerMenu();
+    }
+})
 
 
-burger.addEventListener('click', () => {
-    burger.classList.toggle('header__burger_active');
-    headerActive.classList.toggle('header__active');
-    headerContainer.classList.toggle('header__container_active');
-    headerWrapper.classList.toggle('header__wrapper_active');
-    headerWrapperList.classList.toggle('header__wrapper_list_active');
-    headerWrapperLogo.classList.toggle('header__wrapper_logo_active');
-    headerWrapperFigma.classList.toggle('header__wrapper_figma_active');
-});
-
+})

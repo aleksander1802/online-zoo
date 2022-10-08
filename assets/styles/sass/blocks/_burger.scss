@@ -1,0 +1,61 @@
+.burger {
+    width: 640px;
+    &__menu {
+        padding: 10px;
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        background-color: #fff;        
+        height: 309px;
+        width: 620px;
+        z-index: 99999;
+        transition: .5s;
+        overflow: hidden;
+        
+        &_list {
+            display: flex;
+            flex-direction: column;
+            height: 295px;
+            justify-content: space-between;            
+        }
+        &_link {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 400;
+            color: #000000;
+            width: 200px;
+            height: 100%;            
+            &:hover {
+                color: #FE9013;
+                background: rgba(0,0,0, .1);
+            }
+            &-logo {
+                width: 64px;
+                height: 40px;
+                border: 1px solid #FE9013;
+                border-radius: 2px;
+                color: #FE9013;
+                margin-bottom: 33px;
+                p {
+                    text-align: center;
+                    position: relative;
+                    &::before {
+                        content: url('../../assets/icons/burger/bamboo__burger_orange.svg');
+                        position: absolute;
+                        bottom: 0;
+                        left: 7px;
+                    }
+                }
+                &:hover {
+                    background: rgba(0,0,0, .0);
+                }
+            }
+        }
+    }
+    &__close {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+}

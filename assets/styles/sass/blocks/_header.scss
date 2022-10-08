@@ -41,24 +41,24 @@
             z-index: 50; 
             transition: all .3s;               
         }
-        &_active {
-            &::before {
-                transform: rotate(45deg);
-                top: 4px;
-                background-color: #000000;
-                transition: all .3s;
-            }
-            &::after {
-                transform: rotate(-45deg);
-                bottom: 4px;
-                background-color: #000000;
-                transition: all .3s;
-            }
-            span {
-                transform: scale(0);
-                transition: all .3s;
-            }
-        }
+        // &_active {
+        //     &::before {
+        //         transform: rotate(45deg);
+        //         top: 4px;
+        //         background-color: #000000;
+        //         transition: all .3s;
+        //     }
+        //     &::after {
+        //         transform: rotate(-45deg);
+        //         bottom: 4px;
+        //         background-color: #000000;
+        //         transition: all .3s;
+        //     }
+        //     span {
+        //         transform: scale(0);
+        //         transition: all .3s;
+        //     }
+        // }
     }
     &__wrapper {
         display: flex;

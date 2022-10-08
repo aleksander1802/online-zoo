@@ -181,23 +181,18 @@
                 width: 270px;
                 height: 52px;
                 margin-top: 68px;
-                position: relative;
-                &::after {
-                    content: url('../../assets/icons/donate/vector_number.svg');
-                    position: absolute;
-                    height: 20px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    right: 10px;           
-                }
+                border: 1px solid #929699;
+                border-radius: 2px;
+                display: inline-block;
+                
                 &-num {                    
-                    width: 250px;
-                    height: 52px;
+                    width: 100%;
+                    max-width: 270px;
+                    border: none;
                     background-color: transparent;
-                    border: 1px solid #929699;
-                    border-radius: 2px;
-                    padding-left: 8px;
-                    padding-right: 8px;
+                    width: calc(100% - 24px - 10px);
+                    height: 99%;                    
+                    box-sizing: border-box;
                     -moz-appearance: textfield;
                     outline: none;
                     &::-webkit-outer-spin-button {
@@ -208,12 +203,14 @@
                         -webkit-appearance: none;
                         margin: 0;
                     }
-                    &:focus {
-                        border: 1px solid #4B9200;
+                    &:focus {          
                         &::placeholder {
                             color: #4B9200;
                         }
-                    }       
+                    }  
+                }
+                &:focus {
+                    border: 1px solid green;
                 }
             }            
             &-select {
@@ -277,3 +274,4 @@
         
     }
 }
+

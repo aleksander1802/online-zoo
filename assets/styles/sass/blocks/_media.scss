@@ -48,6 +48,10 @@
         }
     }
 
+    .wrapper__for_fucking_buttons {
+        width: 960px;
+    }
+
     .backstage {
         padding-top: 100px;
         padding-bottom: 140px;
@@ -68,12 +72,17 @@
             }
         }
         &__animals {
-            width: 960px;
+            width: 940px;
             overflow: hidden;
             grid-template-columns: repeat(4, 294px);
             grid-template-rows: repeat(2, 294px); 
             row-gap: 150px;           
-            padding-left: 0;
+            &_slider {
+                width: 940px;
+            }
+            &_sliderWrapper {
+                width: 960px;
+            }
             &_item {
                 grid-template-columns: 294px;
                 grid-template-rows: 294px;
@@ -82,18 +91,6 @@
                     max-width: 295px;
                     min-height: 295px;
                     max-height: 295px;
-                }
-                &:nth-child(4) {
-                    grid-column-start: 2;
-                    grid-row-start: 2;                    
-                }
-                &:nth-child(3) {
-                    grid-column-start: 1;
-                    grid-row-start: 2;
-                }
-                &:nth-child(6) {
-                    grid-column-start: 3;
-                    grid-row-start: 1;
                 }
             }
             
@@ -114,17 +111,17 @@
         }
         
         &__button {
-            margin-top: 141px; 
+            margin-top: 65px; 
         }
     }
 
     .button__animals_right {        
         right: 322px;
-        bottom: 309px;
+        bottom: 385px;
     }
     .button__animals_left {        
         left: 323px;
-        bottom: 309px;
+        bottom: 385px;
     }
 
     .feed {
@@ -170,26 +167,34 @@
             height: 495px;
             width: 940px;
             overflow: hidden;
+            grid-template-columns: 940px;
             grid-template-rows: 32px 391px 8px;
             margin-left: 0;
-            justify-content: space-between;
+            
+        }
+        &__title {
+            align-self: center;
         }
         &__wrapper {
             width: 940px; 
-            display: grid;
-            grid-template-columns: repeat(4, 293px);
-            column-gap: 29px;
-            justify-content: start; 
+             
             &_item {                
-                width: auto;                
+                width: 260px;  
+                margin-right: 30px;              
                 &:first-child {
                     margin-left: 2px;
                 }
                 &-descr {
-                    width: 245px;
+                    width: auto;
                 }
 
             }
+        }
+        &__slider {
+            width: 940px;
+        }
+        &__modal {
+            
         }
         &__scroll {   
             display: block;  
@@ -370,34 +375,25 @@
         width: 600px;
     }
 
+    .burger {
+        width: 640px;
+        &__menu {
+            display: flex;
+        }
+    }
+    
+
     .header {
-        z-index: 100;
-        height: 34px;
-        overflow: hidden;
+        z-index: 9999;
+        height: 34px;        
         position: fixed;
         &__burger {
             display: block;           
-        }
-        &__active {
-            height: 329px;
-            background-color: #E5E5E5;
-            transition: all .5s;
-        }
-        &__container {
-            &_active {
-                width: 620px;
-                transition: all .5s;
-            }
-        }       
+        }     
         &__wrapper {
             margin-right: 0;
             height: 34px;
             flex-direction: column;
-            &_active {
-                height: 329px;
-                padding-top: 10px;
-                transition: all .5s;
-            }
             &_logo {                
                 border: none;
                 width: 47px;
@@ -414,56 +410,23 @@
                         left: 3px;
                     }
                 }
-            }   
-            &_logo {
-                &_active {
-                    width: 65px;
-                    height: 41px;
-                    border: 1px solid #FE9013;
-                    border-radius: 2px;
-                    margin-bottom: 0;         
-                    p {
-                        font-size: 15px;
-                        color: #FE9013;
-                        margin-top: 0;
-                        &::before {
-                            content: url("../../assets/images/header/bamboo_tablet_active.svg");
-                            bottom: 0;
-                            left: 8px;
-                            }
-                    }            
-                }
-            }
+            }  
+            
             &_list {
                 width: 600px;
                 flex-direction: column;
                 align-items: flex-start;
-                &_active {
-                    width: 620px;
-                    height: 245px;
-                    transition: all .5s;
-                    a {
-                        display: block;                        
-                        color: #333B41;
-                    }
-                }
                 &-link {
                     width: 83px;
                     height: 53px;
                 }
             }
             &_figma {
-                align-self: start;
-                &_active {
-                    height: 15px;
-                    align-self: start;
-                    padding-bottom: 55px;
-                    transition: all .5s;
-                    a {
-                        color: #333B41;
-                    }
-                }
-            }                               
+                align-self: start;                
+            } 
+            &_link {
+                display: none;
+            }                              
         }        
     }
 
@@ -500,6 +463,10 @@
         }
     }
 
+    .wrapper__for_fucking_buttons {
+        width: 600px;
+    }
+
     .backstage {
         padding-top: 60px;
         padding-bottom: 100px;
@@ -531,6 +498,12 @@
             grid-template-rows: repeat(2, 285px); 
             row-gap: 138px;           
             padding-left: 0;
+            &_sliderWrapper {
+                width: 600px;
+            }
+            &_slider {
+                width: 600px;
+            }
             &_item {
                 grid-template-columns: 285px;
                 grid-template-rows: 285px;
@@ -561,18 +534,18 @@
         }       
         
         &__button {
-            margin-top: 107px; 
+            margin-top: 0; 
         }
     }
 
     .button__animals_right {
         right: 223px;
-        bottom: 304px;
+        bottom: 411px;
     }
 
     .button__animals_left {
         left: 223px;
-        bottom: 304px;
+        bottom: 411px;
     }
 
     .feed {
@@ -645,15 +618,18 @@
         }
         &__grid {
             width: 600px;
-            height: 434px;
+            height: 442px;
             grid-template-columns: 600px;
-            grid-template-rows: 47px 357px;
+            grid-template-rows: 47px 365px;
             justify-items: start;            
         }   
         &__wrapper {
             padding-top: 0;
             overflow: hidden;
-            height: 357px;
+            height: 365px;
+            display: grid;
+            column-gap: 29px;
+            justify-content: start;
             grid-template-columns: 598px;            
             grid-template-rows: repeat(3, 109px);
             row-gap: 16px;
@@ -664,6 +640,7 @@
                 padding-top: 9px;
                 padding-left: 10px;
                 margin-left: 2px;
+                width: 586px;
                 &:nth-child(2) {
                     padding-top: 5px;
                     padding-bottom: 5px;
@@ -694,7 +671,7 @@
     .button__testimonials {
         display: block;
         margin: 0 auto;
-        margin-top: 40px;
+        margin-top: 32px;
         width: 240px;
     }
 
@@ -851,11 +828,11 @@
                     width: 180px;
                     height: 43px;
                     margin-top: 59px;
-                    margin-left: 210px;                    
+                    margin-left: 0;                    
                     &-num {
-                        width: 165px;
+                        max-width: 150px;
                         height: 42px;
-                        padding-left: 5px;
+                        padding-left: 0;
                     }
                 }
             }
@@ -879,48 +856,26 @@
         width: 300px;
     } 
 
+    .burger { 
+        width: 320px;  
+        &__menu {
+            display: flex;
+            width: 300px;  
+        }
+    }
+
     .header { 
         position: fixed;
         top: 0;
         &__burger {
             top: 12px;
             right: 10px;
-        }       
-        &__active {
-            height: 329px;
-            background-color: #E5E5E5;
-            transition: all .5s;
-        }
-        &__container {
-            &_active {
-                width: 620px;
-                transition: all .5s;
-            }
-        }       
+        }      
         &__wrapper {
-            margin-right: 0;
-            &_active {
-                height: 324px;
-                width: 300px;   
-            }                       
+            margin-right: 0;      
             &_list {
-                width: 300px;                
-                &_active {
-                    width: 300px;  
-                    height: 240px;                                      
-                    a {
-                        margin-left: 10px;
-                    }
-                }
-            }
-            &_figma {                
-                &_active {
-                    a {
-                        color: #333B41;
-                        margin-left: 10px;
-                    }
-                }
-            }                               
+                width: 300px;
+            }                                          
         }        
     }
 
@@ -958,6 +913,11 @@
         }
     }
 
+    .wrapper__for_fucking_buttons {
+        width: 300px;
+        height: 1341px;
+    }
+
     .backstage {
         padding-top: 104px;
         padding-bottom: 60px;
@@ -991,16 +951,15 @@
             grid-template-columns: 285px 285px;
             grid-template-rows: repeat(4, 285px); 
             row-gap: 67px;
-            &_item {
-                &:nth-child(4) {
-                    grid-column-start: 1;
-                    grid-row-start: 4;                    
-                }
-                // &:nth-child(6) {
-                //     grid-column-start: 3;
-                //     grid-row-start: 1;
-                // }
-            }  
+            grid-template-areas:
+            'a e'    
+            'b f'
+            'c g'
+            'd h';
+            &_sliderWrapper {
+                width: 300px;
+                height: 1341px;
+            }
         }
 
         &__flower {
@@ -1119,13 +1078,13 @@
             width: 300px;
             height: 406px;
             grid-template-columns: 300px;
-            grid-template-rows: 47px 357px;
+            grid-template-rows: 47px 358px;
             justify-items: start;            
         }   
         &__wrapper {
             padding-top: 0;
             overflow: hidden;
-            height: 357px;
+            height: 360px;
             grid-template-columns: 298px;            
             grid-template-rows: repeat(3, 109px);
             row-gap: 16px;
@@ -1136,6 +1095,7 @@
                 padding-top: 8px;
                 padding-left: 11px;
                 margin-left: 2px;
+                width: 285px;
                 &:nth-child(2) {
                     padding-top: 9px;
                     padding-bottom: 1px;
@@ -1371,7 +1331,7 @@
                     width: 180px;
                     height: 43px;
                     margin-top: -3px;
-                    margin-left: 61px;                    
+                    margin-left: 0;                    
                     &-num {
                         width: 165px;
                         height: 42px;
@@ -1388,4 +1348,5 @@
             }
         }        
     }
+    
 }

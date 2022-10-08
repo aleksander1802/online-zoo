@@ -3,13 +3,14 @@
     position: relative;
     &__container {
         position: relative;
+        
     }
     &__wrapper {
         display: grid;
         grid-template-columns: 609px 1fr;
         column-gap: 87px;
         padding-bottom: 175px;
-        padding-left: 15px;        
+        padding-left: 15px;               
         &_description {
             display: grid;
             grid-template-rows: 104px 58px 31px 112px; 
@@ -38,17 +39,41 @@
         }
     }
     &__animals {   
-        width: 1158px;     
+        position: absolute;
         display: grid;
         grid-template-columns: repeat(4, 365px);
         grid-template-rows: 367px 367px;
         column-gap: 30px;
         row-gap: 80px;
-        justify-content: start;    
-        position: relative;
+        justify-content: start;
         overflow: hidden;
-        z-index: 10;
-        padding-left: 15px;
+        z-index: 10; 
+        grid-template-areas:
+        'a b c d'    
+        'e f g h';   
+        margin: 0 auto;
+        padding-right: 25px;
+        &_second {
+            position: absolute;
+            left: 1180px;
+        }
+        &_sliderWrapper {
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+            height: 815px;
+            width: 1155px;
+        }
+        &_slider {  
+            position: absolute;
+            left: 0; 
+            height: 815px;
+            width: 1180px;            
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            transition: all .3s;
+        }
         &_item { 
             position: relative;
             display: grid;
@@ -57,6 +82,31 @@
             border: 1px solid #FA6F32;
             border-radius: 5px;
             overflow: hidden;
+            
+            &:nth-child(1) {
+                grid-area: a;
+            }
+            &:nth-child(2) {
+                grid-area: b;
+            }
+            &:nth-child(3) {
+                grid-area: c;
+            }
+            &:nth-child(4) {
+                grid-area: d;
+            }
+            &:nth-child(5) {
+                grid-area: e;
+            }
+            &:nth-child(6) {
+                grid-area: f;
+            }
+            &:nth-child(7) {
+                grid-area: g;
+            }
+            &:nth-child(8) {
+                grid-area: h;
+            }
             &::before {
                 content: "";
                 position: absolute;
@@ -129,7 +179,7 @@
                         top: -2px;
                     }
                 }
-            }
+            }            
         }
     }
     &__flower {
@@ -150,7 +200,7 @@
     &__button {
         display: block;
         margin: 0 auto;
-        margin-top: 138px;
+        margin-top: 139px;
         width: 100%;
         text-align: center;
     }

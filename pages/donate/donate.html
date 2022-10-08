@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Petstory</title>
 </head>
 <body>
         <header class="header donate__header"> 
             <h1>PetStory Online</h1>
-            <div class="container header__container">
-                <div class="header__burger">
-                    <span></span>
-                </div>
-                <nav class="header__wrapper">  
+            <div class="container header__container">                
+                <nav class="header__wrapper">
                     <div class="header__wrapper_list">
                     <a href="../main/index.html" class="header__wrapper_list-link">
                         <div class="header__wrapper_logo">
@@ -33,6 +31,29 @@
                         </a>
                     </div>
                 </nav>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <div class="burger__wrapper">
+                    <nav class="burger__menu hide">
+                        <div class="burger__menu_list">                            
+                                <a href="../main/index.html" class="burger__menu_link burger__menu_link-logo">                                
+                                    <p class="burger__menu_logo">PetStory online</p>                                
+                                </a>
+                                <a href="../main/index.html" class="burger__menu_link">About</a>
+                                <a href=""  class="burger__menu_link">Map</a>
+                                <a href=""  class="burger__menu_link">Zoos</a>
+                                <a href="../donate/donate.html"  class="burger__menu_link">Donate</a>
+                                <a href=""  class="burger__menu_link">Contact us</a>
+                                <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks" class="burger__menu_link burger__menu_figma">
+                                    Designed by ©
+                                </a>
+                            </div>
+                            <div class="burger__close">
+                                <img src="https://img.icons8.com/external-gradak-royyan-wijaya/48/000000/external-delete-gradak-interface-gradak-royyan-wijaya.png" alt="close burger button" class="burger__close">
+                            </div>
+                    </nav>
+                </div>
             </div>            
         </header>
 
@@ -68,49 +89,52 @@
                             <fieldset id="group1" class="donation__form_wrapper_radio">
                                 <legend class="donation__form_title">Amount</legend>
                                 <div class="donation__form_wrapper_radio-btn">
-                                    <input id="radio-1" type="radio" name="radio" value="1" checked>
+                                    <input id="radio-1" type="radio" name="radio" value="5000" class="donation__input_radio">
                                     <label for="radio-1">$5000</label>
                                 </div>
         
                                 <div class="donation__form_wrapper_radio-btn">
-                                    <input id="radio-2" type="radio" name="radio" value="2">
+                                    <input id="radio-2" type="radio" name="radio" value="2000" class="donation__input_radio">
                                     <label for="radio-2">$2000</label>
                                 </div>
         
                                 <div class="donation__form_wrapper_radio-btn">
-                                    <input checked id="radio-3" type="radio" name="radio" value="3">
+                                    <input id="radio-3" type="radio" name="radio" value="1000" class="donation__input_radio">
                                     <label for="radio-3">$1000</label>
                                 </div>
         
                                 <div class="donation__form_wrapper_radio-btn">
-                                    <input id="radio-4" type="radio" name="radio" value="4">
+                                    <input id="radio-4" type="radio" name="radio" value="500" class="donation__input_radio">
                                     <label for="radio-4">$500</label>
                                 </div>
         
                                 <div class="donation__form_wrapper_radio-btn">
-                                    <input id="radio-5" type="radio" name="radio" value="5">
+                                    <input id="radio-5" type="radio" name="radio" value="250" class="donation__input_radio">
                                     <label for="radio-5">$250</label>
                                 </div>
         
                                 <div class="donation__form_wrapper_radio-btn">
-                                    <input id="radio-6" type="radio" name="radio" value="6">
+                                    <input checked id="radio-6" type="radio" name="radio" value="100" class="donation__input_radio">
                                     <label for="radio-6">$100</label>
                                 </div>
         
                                 <div class="donation__form_wrapper_radio-btn">
-                                    <input id="radio-7" type="radio" name="radio" value="7">
+                                    <input id="radio-7" type="radio" name="radio" value="50" class="donation__input_radio">
                                     <label for="radio-7">$50</label>
                                 </div>
         
                                 <div class="donation__form_wrapper_radio-btn">
-                                    <input id="radio-8" type="radio" name="radio" value="8">
+                                    <input id="radio-8" type="radio" name="radio" value="25" class="donation__input_radio">
                                     <label for="radio-8">$25</label> 
                                 </div>
                             </fieldset>
                             
-                            <div id="num" class="donation__form_wrapper-number">
-                                <input placeholder="Another amount" class="donation__form_wrapper-number-num" type="number" name="number" id="number" min="1" max="9999">
-                            </div>
+                            
+
+                            <label for="number" class="donation__form_wrapper-number">
+                                <input placeholder="Another amount" name="number" type="number" value="100" class="donation__form_wrapper-number-num">
+                                <i class="fa-sharp fa-solid fa-dollar-sign"></i> 
+                            </label>
                             
 
                             <fieldset id="group2" class="donation__form_wrapper-select">
@@ -216,5 +240,6 @@
 
     
      <script src="script.js"></script>
+     <script src="input_checked.js"></script>
 </body>
 </html>
