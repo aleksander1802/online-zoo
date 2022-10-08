@@ -7,6 +7,7 @@ const closeBurger = document.querySelector('.burger__close');
 const headerWrapper = document.querySelector('.header__wrapper');
 const burgerWrapper = document.querySelector('.burger__wrapper');
 
+
 const openBurger = () => {
     burger.classList.add('hide');
     burgerShow.classList.remove('hide');
@@ -32,6 +33,7 @@ burgerWrapper.addEventListener('click', (e) => {
         closeBurgerMenu();
     }
 })
+
 
 });
 

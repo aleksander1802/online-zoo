@@ -4,11 +4,15 @@ window.addEventListener('DOMContentLoaded', function() {
     const animalButtonRight = document.querySelector('.button__animals_right');
     const animalSlider = document.querySelector('.backstage__animals');
     const gridAnimalsSlider = document.querySelector('.backstage__animals_slider');
+
+    
+    
     
     function shuffle() {
         let arr = ['a','b','c','d','e','f', 'g', 'h'];
         
         let currentIndex = arr.length, temporaryValue, randomIndex;
+        
       
         while (0 !== currentIndex) {
       
@@ -20,6 +24,10 @@ window.addEventListener('DOMContentLoaded', function() {
           arr[randomIndex] = temporaryValue;
         }
     
+    
+    
+    
+    
         let arr1 = arr.slice(0, 4).join(' ');
         let arr2 = arr.slice(4).join(' ');
     
@@ -27,6 +35,8 @@ window.addEventListener('DOMContentLoaded', function() {
         
         return random
     }
+    
+      
     
       const elem = document.querySelectorAll(".backstage__animals");
         
@@ -93,6 +103,10 @@ window.addEventListener('DOMContentLoaded', function() {
             
         }
     
+        
+    
+          
+    
         function sliderRight()  {
     
             offset += 1180
@@ -151,5 +165,5 @@ window.addEventListener('DOMContentLoaded', function() {
          shuffle();
 
 
-});
+})
 

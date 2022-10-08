@@ -12,6 +12,7 @@ donateLength.oninput = function(){
     this.value = this.value.slice(0, 4);
 }
 
+
 const headerContainer = document.querySelector('.header__container');
 const burger = document.querySelector('.header__burger');
 const burgerShow = document.querySelector('.burger__menu')

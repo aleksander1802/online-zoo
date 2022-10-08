@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', function() {
     const focusInput = document.querySelector('.donation__form_wrapper-number');
     const inputFocus = document.querySelector('.fa-dollar-sign');
 
+
     function changeValue(e) {
         console.log(e.target.value);
         input.forEach(item => {

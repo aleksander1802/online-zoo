@@ -50,5 +50,8 @@ window.addEventListener('DOMContentLoaded', function() {
     testimonialsClose.forEach(item => {
         item.addEventListener('click', closeModal);
     })
+
+
+
 })
 
